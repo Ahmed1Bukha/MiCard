@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants/button_constants.dart';
+import '../constants/decorations_constants.dart';
 import '../constants/text_constants.dart';
 
 class ButtonBorder extends StatelessWidget {

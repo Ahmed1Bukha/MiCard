@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "808988324914",
+    "project_id": "micard-985b2",
+    "storage_bucket": "micard-985b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808988324914:android:14ea352497b4f9301f782b",
+        "android_client_info": {
+          "package_name": "com.example.business_card"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808988324914-kemm561a4ngg5g0umrk82hfpho2ko1cs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGQ4Axj30B-1Q_cIe_sHNQnOkBK7l3CnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808988324914-kemm561a4ngg5g0umrk82hfpho2ko1cs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

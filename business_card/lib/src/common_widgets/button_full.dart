@@ -1,7 +1,7 @@
 import 'package:business_card/src/constants/text_constants.dart';
 import 'package:flutter/material.dart';
 
-import '../constants/button_constants.dart';
+import '../constants/decorations_constants.dart';
 
 class ButtonFull extends StatelessWidget {
   const ButtonFull(this.text, this.function, {super.key});
