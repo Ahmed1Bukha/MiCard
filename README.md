@@ -23,4 +23,5 @@ Flutter program for the competition MiCard run by Okul
 - Create a digital business card.
 - Ability to save other cards.
 - Share the business code as a QR code.
+  
 ![image](https://github.com/Ahmed1Bukha/MiCard/assets/56551464/8afdca8e-8b1a-49d6-94c6-7e45f679e538)
