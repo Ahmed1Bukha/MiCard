@@ -13,7 +13,7 @@ Flutter program for the competition MiCard run by Okul
 
 # Tools used
 
-- Flutter
+- Flutter (With Riverpod)
 - Figma https://www.figma.com/file/2hWE3QzgDvlXDsLFj5NSSp/MiCard?type=design&node-id=10%3A63&mode=dev
 - Firebase
 
@@ -25,3 +25,5 @@ Flutter program for the competition MiCard run by Okul
 - Share the business code as a QR code.
   
 ![image](https://github.com/Ahmed1Bukha/MiCard/assets/56551464/8afdca8e-8b1a-49d6-94c6-7e45f679e538)
+
+
