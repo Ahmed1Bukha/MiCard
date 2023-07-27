@@ -1,3 +1,9 @@
 # MiCard
-Flutter program for the competition MiCard ran by Okul
-![alt text]([http://url/to/img.png](https://media.discordapp.net/attachments/709619186665521176/1134203749280264355/image.png)https://media.discordapp.net/attachments/709619186665521176/1134203749280264355/image.png)
+Flutter program for the competition MiCard run by Okul
+
+
+
+
+
+
+![preview](https://github.com/Ahmed1Bukha/MiCard/assets/56551464/7beddf5d-6c17-4f75-90ba-0f86824ee87e)
