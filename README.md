@@ -5,8 +5,9 @@ Flutter program for the competition MiCard run by Okul
 
 
 
+![preview](https://github.com/Ahmed1Bukha/MiCard/assets/56551464/06f3654e-7690-4336-8e6b-21ea459cd288)
 
-![preview](https://github.com/Ahmed1Bukha/MiCard/assets/56551464/7beddf5d-6c17-4f75-90ba-0f86824ee87e)
+
 
 
 
@@ -24,6 +25,7 @@ Flutter program for the competition MiCard run by Okul
 - Ability to save other cards.
 - Share the business code as a QR code.
   
-![image](https://github.com/Ahmed1Bukha/MiCard/assets/56551464/8afdca8e-8b1a-49d6-94c6-7e45f679e538)
+![image](https://github.com/Ahmed1Bukha/MiCard/assets/56551464/0ac90150-39a7-4cbb-839a-820b4124ea65)
+
 
 
