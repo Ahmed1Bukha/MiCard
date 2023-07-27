@@ -39,6 +39,15 @@ dependencies:
   firebase_auth: ^4.7.1
   flutter_riverpod: ^2.3.6
   shared_preferences: ^2.2.0
+  firebase_database: ^10.2.4
+  cloud_firestore: ^4.8.4
+  qr_flutter: ^4.1.0
+  qr_code_scanner: ^1.0.1
+  screenshot: ^2.1.0
+  path_provider: ^2.0.15
+  gallery_saver: ^2.3.2
+  share_plus: ^7.0.2
+  firebase_storage: ^11.2.5
 
 dev_dependencies:
   flutter_test:

@@ -21,15 +21,19 @@ class DesignCardPage extends ConsumerWidget {
         ),
         child: SafeArea(
           child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Text(
-                  "Enter your info",
-                  style: h1,
-                  textAlign: TextAlign.center,
-                ),
-                FormType1()
-              ],
+            reverse: true,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Column(
+                children: [
+                  Text(
+                    "Enter your info",
+                    style: h1.copyWith(fontSize: 50),
+                    textAlign: TextAlign.center,
+                  ),
+                  FormType1()
+                ],
+              ),
             ),
           ),
         ),

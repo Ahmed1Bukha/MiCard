@@ -1,9 +1,11 @@
+import 'package:business_card/src/app.dart';
 import 'package:business_card/src/common_widgets/button_full.dart';
 import 'package:business_card/src/common_widgets/cards/type1_card.dart';
 import 'package:business_card/src/constants/text_constants.dart';
+import 'package:business_card/src/models_classes/cloud_store.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
+import 'package:go_router/go_router.dart';
 import 'form_type1.dart';
 
 class PreviewCardPage extends ConsumerWidget {
@@ -35,7 +37,12 @@ class PreviewCardPage extends ConsumerWidget {
             const SizedBox(
               height: 200,
             ),
-            ButtonFull("Generate", () {})
+            ButtonFull("Generate", () {
+              ColudStore().addCard(card1.fullName, card1.jobTitle, card1.email,
+                  card1.web, card1.phone, card1.mobile);
+              ref.read(userCard.state).state = card1;
+              context.go('/home');
+            })
           ],
         )),
       ),

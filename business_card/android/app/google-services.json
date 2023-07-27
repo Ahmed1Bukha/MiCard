@@ -29,6 +29,13 @@
             {
               "client_id": "808988324914-kemm561a4ngg5g0umrk82hfpho2ko1cs.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "808988324914-1q4crarjh0gb68gjumt9l01hq3ujukmv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.businessCard.RunnerTests"
+              }
             }
           ]
         }

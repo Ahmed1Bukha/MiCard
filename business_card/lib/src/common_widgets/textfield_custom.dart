@@ -32,13 +32,19 @@ class CustomTextField extends StatelessWidget {
                 ),
               ],
             ),
-            TextField(
+            TextFormField(
               controller: myController,
               obscureText: isPassword,
               decoration: textFieldStyle.copyWith(
                 hintText: hintText,
                 hintStyle: hintStyle,
               ),
+              validator: (value) {
+                if (value == null || value.isEmpty) {
+                  return 'Please enter some text';
+                }
+                return null;
+              },
             ),
           ],
         ),

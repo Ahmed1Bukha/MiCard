@@ -1,3 +1,4 @@
+import 'package:business_card/src/constants/text_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -30,13 +31,19 @@ class Type1Card extends ConsumerWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(fullName),
+                Text(
+                  fullName,
+                  style: h4.copyWith(fontWeight: FontWeight.w900, fontSize: 30),
+                ),
                 const Divider(
                   height: 10,
                   thickness: 2,
                   color: Colors.black,
                 ),
-                Text(jobTitle),
+                Text(
+                  jobTitle,
+                  style: h4,
+                ),
                 const SizedBox(
                   height: 10,
                 ),
@@ -46,15 +53,27 @@ class Type1Card extends ConsumerWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(email),
-                        Text(web),
+                        Text(
+                          email,
+                          style: h4,
+                        ),
+                        Text(
+                          web,
+                          style: h4,
+                        ),
                       ],
                     ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(phone),
-                        Text(mobile),
+                        Text(
+                          phone,
+                          style: h4,
+                        ),
+                        Text(
+                          mobile,
+                          style: h4,
+                        ),
                       ],
                     ),
                   ],

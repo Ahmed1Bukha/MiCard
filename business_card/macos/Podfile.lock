@@ -635,9 +635,10 @@ PODS:
     - BoringSSL-GRPC/Interface (= 0.0.24)
   - BoringSSL-GRPC/Interface (0.0.24)
   - cloud_firestore (4.8.4):
-    - Firebase/Firestore (= 10.12.0)
+    - Firebase/CoreOnly (~> 10.12.0)
+    - Firebase/Firestore (~> 10.12.0)
     - firebase_core
-    - Flutter
+    - FlutterMacOS
     - nanopb (< 2.30910.0, >= 2.30908.0)
   - Firebase/Auth (10.12.0):
     - Firebase/CoreOnly
@@ -651,16 +652,18 @@ PODS:
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 10.12.0)
   - firebase_auth (4.7.1):
-    - Firebase/Auth (= 10.12.0)
+    - Firebase/Auth (~> 10.12.0)
+    - Firebase/CoreOnly (~> 10.12.0)
     - firebase_core
-    - Flutter
+    - FlutterMacOS
   - firebase_core (2.15.0):
-    - Firebase/CoreOnly (= 10.12.0)
-    - Flutter
+    - Firebase/CoreOnly (~> 10.12.0)
+    - FlutterMacOS
   - firebase_database (10.2.4):
-    - Firebase/Database (= 10.12.0)
+    - Firebase/CoreOnly (~> 10.12.0)
+    - Firebase/Database (~> 10.12.0)
     - firebase_core
-    - Flutter
+    - FlutterMacOS
   - FirebaseAppCheckInterop (10.12.0)
   - FirebaseAuth (10.12.0):
     - FirebaseAppCheckInterop (~> 10.0)
@@ -690,7 +693,7 @@ PODS:
     - "gRPC-C++ (~> 1.50.1)"
     - leveldb-library (~> 1.22)
     - nanopb (< 2.30910.0, >= 2.30908.0)
-  - Flutter (1.0.0)
+  - FlutterMacOS (1.0.0)
   - GoogleUtilities/AppDelegateSwizzler (7.11.4):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -769,28 +772,23 @@ PODS:
   - gRPC-Core/Interface (1.50.1)
   - GTMSessionFetcher/Core (3.1.1)
   - leveldb-library (1.22.2)
-  - MTBBarcodeScanner (5.0.11)
   - nanopb (2.30909.0):
     - nanopb/decode (= 2.30909.0)
     - nanopb/encode (= 2.30909.0)
   - nanopb/decode (2.30909.0)
   - nanopb/encode (2.30909.0)
   - PromisesObjC (2.3.1)
-  - qr_code_scanner (0.2.0):
-    - Flutter
-    - MTBBarcodeScanner
   - shared_preferences_foundation (0.0.1):
     - Flutter
     - FlutterMacOS
 
 DEPENDENCIES:
-  - cloud_firestore (from `.symlinks/plugins/cloud_firestore/ios`)
-  - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
-  - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
-  - firebase_database (from `.symlinks/plugins/firebase_database/ios`)
-  - Flutter (from `Flutter`)
-  - qr_code_scanner (from `.symlinks/plugins/qr_code_scanner/ios`)
-  - shared_preferences_foundation (from `.symlinks/plugins/shared_preferences_foundation/darwin`)
+  - cloud_firestore (from `Flutter/ephemeral/.symlinks/plugins/cloud_firestore/macos`)
+  - firebase_auth (from `Flutter/ephemeral/.symlinks/plugins/firebase_auth/macos`)
+  - firebase_core (from `Flutter/ephemeral/.symlinks/plugins/firebase_core/macos`)
+  - firebase_database (from `Flutter/ephemeral/.symlinks/plugins/firebase_database/macos`)
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - shared_preferences_foundation (from `Flutter/ephemeral/.symlinks/plugins/shared_preferences_foundation/darwin`)
 
 SPEC REPOS:
   trunk:
@@ -808,52 +806,47 @@ SPEC REPOS:
     - gRPC-Core
     - GTMSessionFetcher
     - leveldb-library
-    - MTBBarcodeScanner
     - nanopb
     - PromisesObjC
 
 EXTERNAL SOURCES:
   cloud_firestore:
-    :path: ".symlinks/plugins/cloud_firestore/ios"
+    :path: Flutter/ephemeral/.symlinks/plugins/cloud_firestore/macos
   firebase_auth:
-    :path: ".symlinks/plugins/firebase_auth/ios"
+    :path: Flutter/ephemeral/.symlinks/plugins/firebase_auth/macos
   firebase_core:
-    :path: ".symlinks/plugins/firebase_core/ios"
+    :path: Flutter/ephemeral/.symlinks/plugins/firebase_core/macos
   firebase_database:
-    :path: ".symlinks/plugins/firebase_database/ios"
-  Flutter:
-    :path: Flutter
-  qr_code_scanner:
-    :path: ".symlinks/plugins/qr_code_scanner/ios"
+    :path: Flutter/ephemeral/.symlinks/plugins/firebase_database/macos
+  FlutterMacOS:
+    :path: Flutter/ephemeral
   shared_preferences_foundation:
-    :path: ".symlinks/plugins/shared_preferences_foundation/darwin"
+    :path: Flutter/ephemeral/.symlinks/plugins/shared_preferences_foundation/darwin
 
 SPEC CHECKSUMS:
   abseil: 926fb7a82dc6d2b8e1f2ed7f3a718bce691d1e46
   BoringSSL-GRPC: 3175b25143e648463a56daeaaa499c6cb86dad33
-  cloud_firestore: 005e157ad342dbfb2e461cb111a9020aa71bfb22
+  cloud_firestore: fcfdb024e08f0bca8031d3beaeb683a20eb1627e
   Firebase: 07150e75d142fb9399f6777fa56a187b17f833a0
-  firebase_auth: a57bf431e73283cbffaa562717256ec6bd2d8d4c
-  firebase_core: e477125798fc37cd4ab43ca6a8536bf7e0929c00
-  firebase_database: 37ea2144bf40525d3ae4df40f70ae4bc3db715a5
+  firebase_auth: 4998fb672bdb2e1af0c1b9b0103aa4406e6eac7d
+  firebase_core: ff59797157ca9adda4440071643761b41fcd03b3
+  firebase_database: ff4c34d3e81b6d55f73286e370924fc16cf88875
   FirebaseAppCheckInterop: f95a4feb9089867aff1a4bdc2ce309137e07736a
   FirebaseAuth: a66c1e14ec58f41d154a4b41ce1a23ea00ad4805
   FirebaseCore: f86a1394906b97ac445ae49c92552a9425831bed
   FirebaseCoreInternal: 950500ad8a08963657f6d8c67b579740c06d6aa1
   FirebaseDatabase: 6d998d7ef2c1723b3e798a85e61a7dc0504b1ea0
   FirebaseFirestore: f94c9541515fa4a49af52269bbc50349009424b4
-  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+  FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
   GoogleUtilities: c63691989bf362ba0505507da00eeb326192e83e
   "gRPC-C++": 0968bace703459fd3e5dcb0b2bed4c573dbff046
   gRPC-Core: 17108291d84332196d3c8466b48f016fc17d816d
   GTMSessionFetcher: e8647203b65cee28c5f73d0f473d096653945e72
   leveldb-library: f03246171cce0484482ec291f88b6d563699ee06
-  MTBBarcodeScanner: f453b33c4b7dfe545d8c6484ed744d55671788cb
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
-  qr_code_scanner: bb67d64904c3b9658ada8c402e8b4d406d5d796e
   shared_preferences_foundation: 5b919d13b803cadd15ed2dc053125c68730e5126
 
-PODFILE CHECKSUM: 70d9d25280d0dd177a5f637cdb0f0b0b12c6a189
+PODFILE CHECKSUM: 236401fc2c932af29a9fcf0e97baeeb2d750d367
 
 COCOAPODS: 1.11.3
