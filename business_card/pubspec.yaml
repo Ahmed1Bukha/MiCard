@@ -48,6 +48,8 @@ dependencies:
   gallery_saver: ^2.3.2
   share_plus: ^7.0.2
   firebase_storage: ^11.2.5
+  pdf: ^3.10.4
+  printing: ^5.11.0
 
 dev_dependencies:
   flutter_test:

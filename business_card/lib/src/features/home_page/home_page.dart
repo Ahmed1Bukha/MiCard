@@ -147,11 +147,18 @@ class _HomeViewState extends ConsumerState<HomeView> {
                       const SizedBox(
                         width: 20,
                       ),
-                      const Column(
+                      Column(
                         children: [
                           Text("PDF"),
-                          CircleAvatar(
-                            child: Icon(Icons.document_scanner),
+                          GestureDetector(
+                            onTap: () async {
+                              // await GenerateLinks().convertToPdf();
+                              // there's not time to implement this shit sorry.
+                              print("pdf done ");
+                            },
+                            child: CircleAvatar(
+                              child: Icon(Icons.document_scanner),
+                            ),
                           ),
                         ],
                       )
