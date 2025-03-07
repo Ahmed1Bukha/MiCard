@@ -1,29 +1,18 @@
 name: Build
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+on: [push, pull_request]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Flutter
+      - uses: actions/checkout@v2
+      - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.7.0" # Updated to a valid version
-          channel: "stable"
-
+          flutter-version: "3.7.0" # Specify the correct version here
       - name: Install dependencies
         run: flutter pub get
-
       - name: Run tests
         run: flutter test
