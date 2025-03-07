@@ -1,18 +1,36 @@
 name: Build
-
-on: [push, pull_request]
-
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
-  build:
+  sonarqube:
+    name: SonarQube
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
+
+      # Set up Flutter
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.7.0" # Specify the correct version here
+          flutter-version: "3.19.0" # Specify your desired Flutter version
+          channel: "stable"
+
+      # Install dependencies
       - name: Install dependencies
         run: flutter pub get
-      - name: Run tests
-        run: flutter test
+
+      # Run tests with coverage
+      - name: Run tests with coverage
+        run: flutter test --coverage
+
+      - name: SonarQube Scan
+        uses: SonarSource/sonarqube-scan-action@v5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }} # Make sure to add this secret
